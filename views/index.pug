@@ -1,0 +1,12 @@
+form(action="/todos/create", method="POST")
+  label input 
+    input(type="text", name = "q")
+  button Create
+  
+form(action="/todos/search", method="GET")
+  input(type="text", name="q")
+  button Search
+  
+ul 
+  each todo in listTodo
+    li= todo.q
