@@ -27,7 +27,7 @@ app.get("/todos", (request, response) => {
   })
 });
 
-console.log(db.get('todos').value());
+//console.log(db.get('todos').value());
 
 app.get("/todos/search", (req, res) => {
     var q = req.query.q;
